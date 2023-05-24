@@ -1,0 +1,27 @@
+{
+    "extends": "expo/tsconfig.base",
+    "compilerOptions": {
+        "strict": true,
+        "baseUrl": "./",
+        "paths": {
+            "@fonts/*": ["assets/fonts/*"],
+            "@images/*": ["assets/images/*"],
+            "@components": ["src/components/index.ts"],
+            "@screens/*": ["src/screens/*"],
+            "@routes/*": ["src/routes/*"],
+            "@sections/*": ["src/sections/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@colors": ["src/theme/colors.ts"],
+            "@theme/*": ["src/theme/*"],
+            "typedef/*": ["src/typedef/*"],
+            "@layouts/*": ["src/layouts/*"],
+            "hoc/*": ["src/hoc/*"],
+            "@demoData/*": ["src/demo-data/*"],
+            "@svgs/*": ["assets/svgs/*"],
+            "@redux/*": ["src/redux/*"],
+            "@validators/*": ["src/validators/*"],
+            "@modals/*": ["src/modals/*"],
+            "@action-sheetes/*": ["src/action-sheets/*"]
+        }
+    }
+}
