@@ -1,24 +1,16 @@
-import React from "react";
-import asRoute from "hoc/asRoute";
-import {
-    Center,
-    Factory,
-    HStack,
-    Image,
-    Pressable,
-    ScrollView,
-    Text,
-    VStack,
-} from "native-base";
-import { ImageBackground } from "react-native";
-import { Image as ExpoImage } from "expo-image";
 import useNavigate from "@hooks/useNavigate";
+import { Image as ExpoImage } from "expo-image";
+import asRoute from "hoc/asRoute";
+import { Image, Pressable, ScrollView, Text, VStack } from "native-base";
+import React from "react";
 
 const HomeScreen = () => {
-    const ImageBg = Factory(ImageBackground);
     const navigate = useNavigate();
     return (
-        <ScrollView showsVerticalScrollIndicator={false}>
+        <ScrollView
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{ flexGrow: 1 }}
+        >
             <VStack flex={1} position={"relative"}>
                 <Image
                     source={require("../../../assets/images/app/home-bg.png")}
@@ -28,6 +20,8 @@ const HomeScreen = () => {
                     left={0}
                     right={0}
                     bottom={0}
+                    w={"100%"}
+                    h={"100%"}
                     resizeMode={"cover"}
                     zIndex={-1}
                 />
@@ -128,6 +122,7 @@ const HomeScreen = () => {
                     maxWidth={"320px"}
                     mx={"auto"}
                     mt={6}
+                    onPress={() => navigate("whereIsMyVin")}
                 >
                     Where is my VIN?
                 </Text>

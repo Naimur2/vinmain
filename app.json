@@ -1,8 +1,8 @@
 {
     "expo": {
-        "name": "WorldOfPlastics",
-        "slug": "WorldOfPlastics",
-        "scheme": "wop",
+        "name": "VinMain",
+        "slug": "VinMain",
+        "scheme": "vinmain",
         "version": "1.0.0",
         "orientation": "portrait",
         "icon": "./assets/images/icon.png",

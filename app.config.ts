@@ -5,9 +5,13 @@ export default ({ config }: ConfigContext): ExpoConfig => {
 
     return {
         ...config,
-        name: "World of Plastics",
-        slug: "world-of-plastics",
-        extra: {},
+        name: "VinMain",
+        slug: "vinmain",
+        extra: {
+            eas: {
+                projectId: "e9077b36-f729-4471-8b3e-da09281d295a",
+            },
+        },
         androidStatusBar: {
             hidden: true,
         },

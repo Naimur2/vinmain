@@ -2,10 +2,14 @@ import { IStackNavigationConfig } from "typedef/navigation.types";
 import Header from "../../components/Header";
 import homeScreen from "../../screens/user-screens/HomeScreen";
 import scannerScreen from "../../screens/user-screens/ScannerScreen";
+import whereIsMyVin from "../../screens/user-screens/WhereIsMyVin";
+import vinConfirmation from "../../screens/user-screens/VinConfirmation";
 
 const userScreens = {
     homeScreen,
     scannerScreen,
+    whereIsMyVin,
+    vinConfirmation,
 };
 
 const userRoutes: IStackNavigationConfig = {

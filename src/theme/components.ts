@@ -5,10 +5,10 @@ import { fontSizes } from "./typography";
 const components = {
     Button: {
         baseStyle: {
-            borderRadius: 8,
+            borderRadius: 5,
             _text: {
                 fontWeight: 600,
-                fontSize: fontSizes.md,
+                fontSize: fontSizes.xl,
                 color: "white",
                 py: 1,
                 px: 6,
@@ -16,9 +16,9 @@ const components = {
         },
         variants: {
             primary: {
-                backgroundColor: _.get(colors, "primary.800"),
+                backgroundColor: _.get(colors, "primary.100"),
                 _pressed: {
-                    backgroundColor: _.get(colors, "primary.700"),
+                    backgroundColor: _.get(colors, "primary.800"),
                 },
             },
             secondary: {
@@ -61,7 +61,7 @@ const components = {
             borderColor: _.get(colors, "gray.300"),
             placeholderTextColor: _.get(colors, "dark.700"),
             fontWeight: 500,
-            borderRadius: 14,
+            borderRadius: 8,
             color: _.get(colors, "dark.800"),
             _focus: {
                 borderColor: _.get(colors, "gray.400"),
