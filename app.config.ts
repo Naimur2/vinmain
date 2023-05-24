@@ -17,6 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => {
                 "CAMERA",
                 "READ_EXTERNAL_STORAGE",
                 "WRITE_EXTERNAL_STORAGE",
+                "RECORD_AUDIO",
             ],
             versionCode: 1,
         },
@@ -27,6 +28,8 @@ export default ({ config }: ConfigContext): ExpoConfig => {
                     "This app requires camera access to provide you with the best experience.",
                 NSPhotoLibraryUsageDescription:
                     "This app requires photo library access to provide you with the best experience.",
+                NSMicrophoneUsageDescription:
+                    "This app requires microphone access to provide you with the best experience.",
             },
         },
         plugins: [...appPlugins],
